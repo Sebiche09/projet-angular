@@ -1,27 +1,10 @@
-# AngularProjet
+# Les avantages d'Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
+Angular adopte des technologies modernes comme TypeScript, qui ajoute des fonctionnalités comme la typage statique, les interfaces et les décorateurs, offrant ainsi une meilleure lisibilité, maintenabilité et un meilleur contrôle des erreurs dans le code.
 
-## Development server
+Angular offre également une fonctionnalité de composants qui permet une bonne performance des serveurs frontend ainsi qu'une simplification du code et un facilité d'utilisation.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Avec angular,  on peut développer également des applications mobiles grâce à Angular Universal et Ionic
 
-## Code scaffolding
+Il y a une grande communauté angular qui permet de facilement avoir de l'aide 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
