@@ -1,0 +1,13 @@
+<h2>{{ exemple.title }}</h2>
+<img [src]="exemple.imageUrl" alt="image" />
+<p>{{ exemple.description }}</p>
+<p>Mis en ligne le {{ exemple.createdAt }}</p>
+<p>
+    @if (!isLiked) {
+        <button (click)="onAddLike()">Je like</button>
+    }@else {
+        <button (click)="onRemoveLike()">Je dislike</button>
+    }
+    {{ exemple.like}}
+</p>
+    
