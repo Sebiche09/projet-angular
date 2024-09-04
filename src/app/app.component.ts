@@ -16,8 +16,8 @@ export class AppComponent {
   monExemple3! : Exemple;
 
   ngOnInit() {
-    this.monExemple = new Exemple("Mon premier post", "Ceci est mon premier post", new Date(), 2, "https://picsum.photos/200/300");
-    this.monExemple2 = new Exemple("Mon deuxième post", "Ceci est mon deuxième post", new Date(), 3, "https://picsum.photos/200/300");
-    this.monExemple3 = new Exemple("Mon troisième post", "Ceci est mon troisième post", new Date(), 4, "https://picsum.photos/200/300");
+    this.monExemple = new Exemple("Mon premier post", "Ceci est mon premier post", new Date(), 2, "https://picsum.photos/1080/720");
+    this.monExemple2 = new Exemple("Mon deuxième post", "Ceci est mon deuxième post", new Date(), 3, "https://picsum.photos/1080/720?random=2");
+    this.monExemple3 = new Exemple("Mon troisième post", "Ceci est mon troisième post", new Date(), 4, "https://picsum.photos/1080/720?random=3");
   }
 }
