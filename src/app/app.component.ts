@@ -12,8 +12,12 @@ import { Exemple } from './models/nom-app';
 })
 export class AppComponent {
   monExemple! : Exemple;
+  monExemple2! : Exemple;
+  monExemple3! : Exemple;
 
   ngOnInit() {
-    this.monExemple = new Exemple("post", "Ceci est mon premier post", new Date(), 2, "https://picsum.photos/200/300");
+    this.monExemple = new Exemple("Mon premier post", "Ceci est mon premier post", new Date(), 2, "https://picsum.photos/200/300");
+    this.monExemple2 = new Exemple("Mon deuxième post", "Ceci est mon deuxième post", new Date(), 3, "https://picsum.photos/200/300");
+    this.monExemple3 = new Exemple("Mon troisième post", "Ceci est mon troisième post", new Date(), 4, "https://picsum.photos/200/300");
   }
 }
