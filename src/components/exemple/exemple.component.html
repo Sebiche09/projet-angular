@@ -1,0 +1,22 @@
+<div class="post-container">
+<h2>{{ exemple.title }}</h2>
+<img [src]="exemple.imageUrl" alt="image" />
+<p>{{ exemple.description }}</p>
+<p>Mis en ligne le {{ exemple.createdAt }}</p>
+<div class="like-buttons">
+    <div>
+    @if (!isLiked) {
+        <button (click)="onAddLike()">Je like</button>
+    }@else {
+        <button (click)="onRemoveLike()">Je dislike</button>
+    }
+    {{ exemple.like}}
+</div>
+<span class="like-count">{{ exemple.like }} likes</span>
+</div>
+@if (exemple.location) {
+    <p>Localisation: {{ exemple.location }}</p>
+}@else {
+    <p>Localisation: Non renseignée</p>
+}
+</div>

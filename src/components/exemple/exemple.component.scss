@@ -1,0 +1,114 @@
+/* Conteneur principal pour centrer le post */
+.post-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+/* En-tête avec le titre */
+h2 {
+  font-size: 1.5rem;
+  margin: 10px;
+  color: #333;
+}
+
+/* Image avec effet de bord arrondi */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Description et date */
+p {
+  padding: 10px;
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Stylisation spécifique pour la date */
+p:last-of-type {
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 5px;
+  padding-left: 10px;
+  font-style: italic;
+}
+
+/* Boutons "like" et "dislike" */
+.like-buttons {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #eaeaea;
+}
+/* Style pour les boutons */
+.like-buttons button {
+  background-color: transparent;
+  border: none;
+  color: #4a90e2;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.like-buttons button:hover {
+  color: #357ab8;
+}
+
+/* Style pour l'affichage du nombre de likes */
+.like-count {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Alignement des boutons et du compteur */
+.like-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.like-buttons button:focus {
+  outline: none;
+}
+
+/* Responsive design pour mobile */
+@media (max-width: 600px) {
+  .post-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    margin: 8px;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .like-buttons {
+    padding: 8px;
+  }
+
+  .like-buttons button {
+    font-size: 0.9rem;
+  }
+
+  .like-count {
+    font-size: 1rem;
+  }
+}
+  
+  
