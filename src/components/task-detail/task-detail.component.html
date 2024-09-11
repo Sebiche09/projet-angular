@@ -1,0 +1,19 @@
+<div class="page-container">
+  <nav>
+    <ul class="nav-bar">
+      <li>
+        <button (click)="goToRoute('/task')" class="nav-button">Liste des tâches</button>
+      </li>
+      <li>
+        <button (click)="goToRoute('/addTask')" class="nav-button">Ajouter tâche</button>
+      </li>
+    </ul>
+  </nav>
+
+  <h1 class="page-title">Détail de la tâche</h1>
+
+  <div class="task-detail">
+    <h2>{{ task?.titre }}</h2>
+    <p>{{ task?.description }}</p>
+  </div>
+</div>

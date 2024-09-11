@@ -1,0 +1,130 @@
+/* Style de la page globale */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5; /* Couleur de fond douce */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333; /* Couleur du texte principale */
+}
+
+h1, h2 {
+  color: #2c3e50; /* Couleur des titres */
+}
+
+/* Style de la barre de navigation */
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #3498db; /* Couleur bleu clair pour la barre de navigation */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet d'élévation */
+}
+
+.nav-bar li {
+  margin: 0 15px;
+}
+
+.nav-bar li:last-child {
+  margin-right: 0;
+}
+
+/* Style des boutons de navigation */
+.nav-button {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre sur les boutons */
+}
+
+.nav-button:hover {
+  background-color: #1abc9c; /* Change de couleur au survol */
+  transform: translateY(-2px); /* Légère élévation au survol */
+}
+
+/* Titre de la page */
+.page-title {
+  margin: 20px 0;
+  font-size: 36px;
+  text-align: center;
+  color: #34495e;
+}
+
+/* Liste des tâches */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Style des éléments de tâche */
+.task-item {
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Ombre douce pour donner de la profondeur */
+  transition: transform 0.2s ease;
+}
+
+.task-item:hover {
+  transform: translateY(-5px); /* Légère élévation au survol */
+}
+
+.task-item h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+/* Bouton Voir Détail */
+.btn-detail {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-detail:hover {
+  background-color: #c0392b;
+  transform: translateY(-3px); /* Légère élévation au survol */
+}
+
+/* Adaptation pour les écrans mobiles */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .nav-bar li {
+    margin-bottom: 15px;
+  }
+
+  .page-title {
+    font-size: 28px;
+  }
+
+  .task-item h2 {
+    font-size: 20px;
+  }
+
+  .task-list {
+    padding: 0 20px;
+  }
+}

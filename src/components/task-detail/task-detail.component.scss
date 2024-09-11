@@ -1,0 +1,110 @@
+/* Style de la page globale */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5; /* Couleur de fond douce */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333; /* Couleur du texte principale */
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+/* Style de la barre de navigation */
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #3498db;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar li {
+  margin: 0 15px;
+}
+
+.nav-bar li:last-child {
+  margin-right: 0;
+}
+
+.nav-button {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button:hover {
+  background-color: #1abc9c;
+  transform: translateY(-2px);
+}
+
+/* Titre de la page */
+.page-title {
+  font-size: 36px;
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+/* Détails de la tâche centré */
+.task-detail {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-detail h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.task-detail p {
+  font-size: 18px;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+/* Adaptation mobile */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+
+  .page-title {
+    font-size: 28px;
+  }
+
+  .task-detail {
+    padding: 20px;
+  }
+
+  .task-detail h2 {
+    font-size: 24px;
+  }
+
+  .task-detail p {
+    font-size: 16px;
+  }
+}

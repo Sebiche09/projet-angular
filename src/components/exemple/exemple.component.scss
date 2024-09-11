@@ -110,5 +110,75 @@ p:last-of-type {
     font-size: 1rem;
   }
 }
+
+/* Style de base pour le conteneur principal */
+:host {
+  display: block;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0); /* Dégradé de fond */
+  animation: gradient-animation 10s ease infinite;
+  padding: 20px;
+}
+
+/* Animation de fond dégradé */
+@keyframes gradient-animation {
+  0% {
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+  }
+  50% {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+  }
+  100% {
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+  }
+}
+
+/* Formes fluides flottantes pour un effet de design */
+.fluid-shape {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  animation: moveShapes 20s infinite ease-in-out;
+}
+
+.fluid-shape:nth-child(1) {
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  left: -50px;
+  animation-duration: 25s;
+}
+
+.fluid-shape:nth-child(2) {
+  width: 200px;
+  height: 200px;
+  bottom: 15%;
+  right: -30px;
+  animation-duration: 30s;
+}
+
+.fluid-shape:nth-child(3) {
+  width: 250px;
+  height: 250px;
+  top: 50%;
+  right: -60px;
+  animation-duration: 35s;
+}
+
+/* Animation pour les formes fluides */
+@keyframes moveShapes {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(20px) translateX(10px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
   
   
